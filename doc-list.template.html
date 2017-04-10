@@ -1,0 +1,13 @@
+<ul>
+  <li ng-repeat="doc in $ctrl.docs">
+    <span>{{doc.name}}</span>
+    <p>{{doc.text}}</p>
+  </li>
+</ul>
+
+<p>
+  Number of docs: {{$ctrl.docs.length}}
+</p>
+
+<button ng-if="$ctrl.buttonA">A</button>
+<button ng-if="$ctrl.buttonB">B</button>
